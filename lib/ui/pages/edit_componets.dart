@@ -39,17 +39,17 @@ class SwotGrid extends StatelessWidget{
                color: Colors.green,
                child: Text('Strengths'),
                ),
-               Card(
+          Card(
                elevation: 10.0,
                color: Colors.blue,
                child: Text('Weaknesses'),
                ),
-               Card(
+          Card(
                elevation: 5.0,
                color: Colors.orange,
                child: Text('Opportunities'),
                ),
-               Card(
+          Card(
                elevation: 5.0,
                color: Colors.purple,
                child: Text('Threats'),
