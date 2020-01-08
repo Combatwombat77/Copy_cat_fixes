@@ -34,34 +34,27 @@ class SwotGrid extends StatelessWidget{
         crossAxisSpacing: 10.0,
         crossAxisCount: 2,
         children: <Widget>[
-          Center(
-             child: Card(
+          Card(
                elevation: 5.0,
                color: Colors.green,
                child: Text('Strengths'),
                ),
-               ),
-               Center(
-             child: Card(
-               elevation: 5.0,
+               Card(
+               elevation: 10.0,
                color: Colors.blue,
                child: Text('Weaknesses'),
                ),
-               ),
-               Center(
-             child: Card(
+               Card(
                elevation: 5.0,
                color: Colors.orange,
                child: Text('Opportunities'),
                ),
-               ),
-               Center(
-             child: Card(
+               Card(
                elevation: 5.0,
                color: Colors.purple,
                child: Text('Threats'),
                ),
-               ),
+               
         ],
         );
       }
