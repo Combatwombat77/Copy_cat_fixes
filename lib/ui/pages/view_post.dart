@@ -57,7 +57,7 @@ class _ViewPostState extends State<ViewPost> {
         onPressed: (){
           newPost("post");
         },
-        backgroundColor: Uidata.btnColor,
+        backgroundColor: Uidata.btnColorFloat,
         child: Icon(Icons.add),
       ),
       body: Container(
