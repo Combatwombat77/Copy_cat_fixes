@@ -35,31 +35,78 @@ class SwotGrid extends StatelessWidget{
         crossAxisCount: 2,
         children: <Widget>[
           Card(
-               elevation: 5.0,
-               color: Colors.green,
-               child: Text('Strengths'),
-               ),
-          Card(
-               elevation: 10.0,
-               color: Colors.blue,
-               child: Text('Weaknesses'),
-               ),
-          Card(
-               elevation: 5.0,
-               color: Colors.orange,
-               child: Text('Opportunities'),
-               ),
-          Card(
-               elevation: 5.0,
-               color: Colors.purple,
-               child: Text('Threats'),
-               ),
+            elevation: 5.0,
+            color: Colors.green,
+            child: Container(
+              
+          child:
+               InkWell(splashColor: Colors.greenAccent,
+               onTap: (){
+                 Navigator.push(context, MaterialPageRoute(builder: (context) => Dashboard()));
+               },
                
-        ],
-        );
-      }
-      )
-      )
+               child:Column(
+                 children: <Widget>[
+                   Expanded(
+                     child:Text('Strengths'),
+               ),
+                 ]),),),),
+          Card(
+            elevation: 5.0,
+            color: Colors.yellow,
+            child: Container(
+              
+          child:
+               InkWell(splashColor: Colors.yellowAccent,
+               onTap: (){
+                 Navigator.push(context, MaterialPageRoute(builder: (context) => Dashboard()));
+               },
+               
+               child:Column(
+                 children: <Widget>[
+                   Expanded(
+                     child:Text('Weaknesses'),
+               ),
+                 ]),),),),
+          Card(
+            elevation: 5.0,
+            color: Colors.blue,
+            child: Container(
+              
+          child:
+               InkWell(splashColor: Colors.blueAccent,
+               onTap: (){
+                 Navigator.push(context, MaterialPageRoute(builder: (context) => Dashboard()));
+               },
+               
+               child:Column(
+                 children: <Widget>[
+                   Expanded(
+                     child:Text('Opportunities'),
+               ),
+                 ]),),),),         
+          Card(
+            elevation: 5.0,
+            color: Colors.purple,
+            child: Container(
+              
+          child:
+               InkWell(splashColor: Colors.purpleAccent,
+               onTap: (){
+                 Navigator.push(context, MaterialPageRoute(builder: (context) => Dashboard()));
+               },
+               
+               child:Column(
+                 children: <Widget>[
+                   Expanded(
+                     child:Text('Threats'),
+               ),
+                 ]),),),),
+               ],
+      );
+      },
+      ),
+      ),
       );
       }
   }
