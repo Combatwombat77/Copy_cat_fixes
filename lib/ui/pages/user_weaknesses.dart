@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
 
-class Strengths extends StatefulWidget{
-  Strengths({this.title, this.strengths});
+class Weak extends StatefulWidget{
+  Weak({this.title, this.strengths});
   final Widget title, strengths;
   @override
-  StrengthsState createState() => new StrengthsState();
+  WeakState createState() => new WeakState();
 }
 
-class StrengthsState extends State<Strengths>{
+class WeakState extends State<Weak>{
   @override
   Widget build(BuildContext context){
     return new MaterialApp(
       home: new Scaffold(
         appBar: new AppBar( 
-          title: Text ('Strengths')
-          ),
+          title: Text('Weaknesses')),
         body: new Column(
           children: <Widget>[
             new TextField(

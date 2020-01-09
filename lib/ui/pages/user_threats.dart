@@ -1,25 +1,24 @@
 import 'package:flutter/material.dart';
 
-class Strengths extends StatefulWidget{
-  Strengths({this.title, this.strengths});
+class Threat extends StatefulWidget{
+  Threat({this.title, this.strengths});
   final Widget title, strengths;
   @override
-  StrengthsState createState() => new StrengthsState();
+  ThreatState createState() => new ThreatState();
 }
 
-class StrengthsState extends State<Strengths>{
+class ThreatState extends State<Threat>{
   @override
   Widget build(BuildContext context){
     return new MaterialApp(
       home: new Scaffold(
-        appBar: new AppBar( 
-          title: Text ('Strengths')
-          ),
+        appBar: new AppBar(
+          title: Text('Threats') ),
         body: new Column(
           children: <Widget>[
             new TextField(
               decoration: new InputDecoration.collapsed(
-                hintText: "Add your strengths..."
+                hintText: "Add your threats..."
               ),
 
             )

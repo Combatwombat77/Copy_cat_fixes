@@ -1,3 +1,7 @@
+import 'package:copy_cat/ui/pages/user_opportunities.dart';
+import 'package:copy_cat/ui/pages/user_strengths.dart';
+import 'package:copy_cat/ui/pages/user_threats.dart';
+import 'package:copy_cat/ui/pages/user_weaknesses.dart';
 import 'package:copy_cat/ui/swot_home.dart';
 import 'package:copy_cat/ui/utils/uidata.dart';
 import 'package:flutter/material.dart';
@@ -42,7 +46,7 @@ class SwotGrid extends StatelessWidget{
           child:
                InkWell(splashColor: Colors.greenAccent,
                onTap: (){
-                 Navigator.push(context, MaterialPageRoute(builder: (context) => Dashboard()));
+                 Navigator.push(context, MaterialPageRoute(builder: (context) => Strengths()));
                },
                
                child:Column(
@@ -59,7 +63,7 @@ class SwotGrid extends StatelessWidget{
           child:
                InkWell(splashColor: Colors.yellowAccent,
                onTap: (){
-                 Navigator.push(context, MaterialPageRoute(builder: (context) => Dashboard()));
+                 Navigator.push(context, MaterialPageRoute(builder: (context) => Weak()));
                },
                
                child:Column(
@@ -76,7 +80,7 @@ class SwotGrid extends StatelessWidget{
           child:
                InkWell(splashColor: Colors.blueAccent,
                onTap: (){
-                 Navigator.push(context, MaterialPageRoute(builder: (context) => Dashboard()));
+                 Navigator.push(context, MaterialPageRoute(builder: (context) => Opps()));
                },
                
                child:Column(
@@ -93,7 +97,7 @@ class SwotGrid extends StatelessWidget{
           child:
                InkWell(splashColor: Colors.purpleAccent,
                onTap: (){
-                 Navigator.push(context, MaterialPageRoute(builder: (context) => Dashboard()));
+                 Navigator.push(context, MaterialPageRoute(builder: (context) => Threat()));
                },
                
                child:Column(
