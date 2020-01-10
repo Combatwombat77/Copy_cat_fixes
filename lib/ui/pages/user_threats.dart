@@ -13,7 +13,14 @@ class ThreatState extends State<Threat>{
     return new MaterialApp(
       home: new Scaffold(
         appBar: new AppBar(
-          title: Text('Threats') ),
+          title: Text('Threats'),
+          actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.done),
+            onPressed: () {
+
+            },
+          ),]),
         body: new Column(
           children: <Widget>[
             new TextField(

@@ -13,13 +13,25 @@ class StrengthsState extends State<Strengths>{
     return new MaterialApp(
       home: new Scaffold(
         appBar: new AppBar( 
-          title: Text ('Strengths')
-          ),
+          title: Text ('Strengths'),
+          actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.done),
+            onPressed: () {
+
+            },
+          ),]),
         body: new Column(
           children: <Widget>[
-            new TextField(
+            new TextFormField(
               decoration: new InputDecoration.collapsed(
-                hintText: "Add your strengths..."
+                hintText: "*Add your strengths..."
+              ),
+
+            ),
+             TextFormField(
+              decoration: new InputDecoration.collapsed(
+                hintText: "*"
               ),
 
             )
