@@ -10,8 +10,7 @@ class Opps extends StatefulWidget{
 class OppsState extends State<Opps>{
   @override
   Widget build(BuildContext context){
-    return new MaterialApp(
-      home: new Scaffold(
+    return Scaffold(
         appBar: new AppBar(
           title: Text('Opportunities')
         ),
@@ -24,7 +23,6 @@ class OppsState extends State<Opps>{
             )
           ],
         )
-      )
     );
   }
 }

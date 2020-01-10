@@ -10,8 +10,7 @@ class Threat extends StatefulWidget{
 class ThreatState extends State<Threat>{
   @override
   Widget build(BuildContext context){
-    return new MaterialApp(
-      home: new Scaffold(
+    return Scaffold(
         appBar: new AppBar(
           title: Text('Threats') ),
         body: new Column(
@@ -24,7 +23,6 @@ class ThreatState extends State<Threat>{
             )
           ],
         )
-      )
     );
   }
 }

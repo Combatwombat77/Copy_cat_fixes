@@ -10,8 +10,7 @@ class Weak extends StatefulWidget{
 class WeakState extends State<Weak>{
   @override
   Widget build(BuildContext context){
-    return new MaterialApp(
-      home: new Scaffold(
+    return Scaffold(
         appBar: new AppBar( 
           title: Text('Weaknesses')),
         body: new Column(
@@ -24,7 +23,6 @@ class WeakState extends State<Weak>{
             )
           ],
         )
-      )
     );
   }
 }

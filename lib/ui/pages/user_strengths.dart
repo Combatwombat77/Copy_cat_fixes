@@ -10,8 +10,7 @@ class Strengths extends StatefulWidget{
 class StrengthsState extends State<Strengths>{
   @override
   Widget build(BuildContext context){
-    return new MaterialApp(
-      home: new Scaffold(
+    return Scaffold(
         appBar: new AppBar( 
           title: Text ('Strengths')
           ),
@@ -25,7 +24,6 @@ class StrengthsState extends State<Strengths>{
             )
           ],
         )
-      )
     );
   }
 }
