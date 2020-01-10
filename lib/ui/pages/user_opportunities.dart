@@ -12,8 +12,14 @@ class OppsState extends State<Opps>{
   Widget build(BuildContext context){
     return Scaffold(
         appBar: new AppBar(
-          title: Text('Opportunities')
-        ),
+          title: Text('Opportunities'),
+          actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.done),
+            onPressed: () {
+
+            },
+          ),]),
         body: new Column(
           children: <Widget>[
             new TextField(

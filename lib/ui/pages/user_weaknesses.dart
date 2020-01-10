@@ -10,16 +10,22 @@ class Weak extends StatefulWidget{
 class WeakState extends State<Weak>{
   @override
   Widget build(BuildContext context){
-    return Scaffold(
+    return new  Scaffold(
         appBar: new AppBar( 
-          title: Text('Weaknesses')),
+          title: Text('Weaknesses'),
+          actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.done),
+            onPressed: () {
+
+            },
+          ),]),
         body: new Column(
           children: <Widget>[
             new TextField(
               decoration: new InputDecoration.collapsed(
                 hintText: "Add your strengths..."
               ),
-
             )
           ],
         )
