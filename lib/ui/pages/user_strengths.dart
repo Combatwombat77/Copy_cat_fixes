@@ -35,7 +35,7 @@ class StrengthsState extends State<Strengths>{
 
             )
           ],
-        )      
+        )
     );
   }
 }
