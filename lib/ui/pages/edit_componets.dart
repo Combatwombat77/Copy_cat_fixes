@@ -2,8 +2,6 @@ import 'package:copy_cat/ui/pages/user_opportunities.dart';
 import 'package:copy_cat/ui/pages/user_strengths.dart';
 import 'package:copy_cat/ui/pages/user_threats.dart';
 import 'package:copy_cat/ui/pages/user_weaknesses.dart';
-import 'package:copy_cat/ui/swot_home.dart';
-import 'package:copy_cat/ui/utils/uidata.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
@@ -33,27 +31,33 @@ class SwotGrid extends StatelessWidget{
         ],
       ),
       body: OrientationBuilder(builder: (context, orientaion){
-        return GridView.count(     
-        padding: const EdgeInsets.all(20.0),
-        crossAxisSpacing: 10.0,
-        crossAxisCount: 2,
-        children: <Widget>[
-          Card(
-            elevation: 5.0,
-            color: Colors.green,
-            child: Container(
-              
-          child:
-               InkWell(splashColor: Colors.greenAccent,
-               onTap: (){
-                 Navigator.push(context, MaterialPageRoute(builder: (context) => Strengths()));
-               },
+        int _counter = 0;
+        int _counter2 = 0;
+        int _counter3 = 0;
+        int _counter4 = 0;
+                return GridView.count(     
+                padding: const EdgeInsets.all(20.0),
+                crossAxisSpacing: 10.0,
+                crossAxisCount: 2,
+                children: <Widget>[
+                  Card(
+                    elevation: 5.0,
+                    color: Colors.green,
+                    child: Container(
+                      
+                  child:
+                       InkWell(splashColor: Colors.greenAccent,
+                       onTap: (){
+                         Navigator.push(context, MaterialPageRoute(builder: (context) => Strengths()));
+                       },
+                       
+                       child:Column(
+                         children: <Widget>[
+                           Text('Strengths'),
+                             Text(
+                      '$_counter',
+              style: Theme.of(context).textTheme.display1,)
                
-               child:Column(
-                 children: <Widget>[
-                   Expanded(
-                     child:Text('Strengths'),
-               ),
                  ]),),),),
           Card(
             elevation: 5.0,
@@ -68,9 +72,10 @@ class SwotGrid extends StatelessWidget{
                
                child:Column(
                  children: <Widget>[
-                   Expanded(
-                     child:Text('Weaknesses'),
-               ),
+                   Text('Weaknesses'),
+                             Text(
+                      '$_counter2',
+              style: Theme.of(context).textTheme.display1,)
                  ]),),),),
           Card(
             elevation: 5.0,
@@ -85,9 +90,10 @@ class SwotGrid extends StatelessWidget{
                
                child:Column(
                  children: <Widget>[
-                   Expanded(
-                     child:Text('Opportunities'),
-               ),
+                   Text('Opportunities'),
+                             Text(
+                      '$_counter3',
+              style: Theme.of(context).textTheme.display1,)
                  ]),),),),         
           Card(
             elevation: 5.0,
@@ -102,9 +108,10 @@ class SwotGrid extends StatelessWidget{
                
                child:Column(
                  children: <Widget>[
-                   Expanded(
-                     child:Text('Threats'),
-               ),
+                   Text('Threats'),
+                             Text(
+                      '$_counter4',
+              style: Theme.of(context).textTheme.display1,)
                  ]),),),),
                ],
       );
@@ -114,5 +121,5 @@ class SwotGrid extends StatelessWidget{
       );
       }
   }
-   
 
+ 
