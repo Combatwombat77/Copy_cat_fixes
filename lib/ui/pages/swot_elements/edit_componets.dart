@@ -1,11 +1,13 @@
-import 'package:copy_cat/ui/pages/user_opportunities.dart';
-import 'package:copy_cat/ui/pages/user_strengths.dart';
-import 'package:copy_cat/ui/pages/user_threats.dart';
-import 'package:copy_cat/ui/pages/user_weaknesses.dart';
+
+import 'package:copy_cat/ui/pages/swot_elements/user_opportunities.dart';
+import 'package:copy_cat/ui/pages/swot_elements/user_strengths.dart';
+import 'package:copy_cat/ui/pages/swot_elements/user_threats.dart';
+import 'package:copy_cat/ui/pages/swot_elements/user_weaknesses.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-import '../dashboard.dart';
+import '../../dashboard.dart';
+
 
 class SwotGrid extends StatelessWidget{
   
